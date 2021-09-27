@@ -19,12 +19,12 @@ let package = Package(
         .library(name: "SourceryFramework", targets: ["SourceryFramework"]),
     ],
     dependencies: [
-        .package(name: "Yams", url: "https://github.com/jpsim/Yams.git", .exact("4.0.0")),
-        .package(name: "Commander", url: "https://github.com/kylef/Commander.git", .exact("0.9.1")),
+        .package(name: "Yams", url: "https://github.com/jpsim/Yams.git", from: "4.0.0"),
+        .package(name: "Commander", url: "https://github.com/kylef/Commander.git", from: "0.9.1"),
         // PathKit needs to be exact to avoid a SwiftPM bug where dependency resolution takes a very long time.
-        .package(name: "PathKit", url: "https://github.com/kylef/PathKit.git", .exact("1.0.1")),
-        .package(name: "StencilSwiftKit", url: "https://github.com/SwiftGen/StencilSwiftKit.git", .exact("2.8.0")),
-        .package(name: "XcodeProj", url: "https://github.com/tuist/xcodeproj", .exact("8.3.1")),
+        .package(name: "PathKit", url: "https://github.com/kylef/PathKit.git", from: "1.0.1"),
+        .package(name: "StencilSwiftKit", url: "https://github.com/SwiftGen/StencilSwiftKit.git", from: "2.8.0"),
+        .package(name: "XcodeProj", url: "https://github.com/tuist/xcodeproj", from: "8.3.1"),
         .package(name: "SwiftSyntax",
                  url: "https://github.com/apple/swift-syntax.git",
                  .exact("0.50500.0")),
